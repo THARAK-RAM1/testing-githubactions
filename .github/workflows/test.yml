@@ -9,7 +9,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install Dependencies
-        run: mkdir test1
+        run: |
+          mkdir test1
+          ls
+          pwd
 
   test:
     name: Test Job
@@ -18,5 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Listing directory
-        run: ls 
+        run: |
+            ls
+            pwd
 
