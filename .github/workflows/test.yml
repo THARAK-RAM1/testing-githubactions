@@ -15,6 +15,7 @@ jobs:
           pwd
 
   test:
+    needs: build
     name: Test Job
     runs-on: ubuntu-latest
     steps:
